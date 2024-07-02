@@ -73,8 +73,6 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.27</version>
         </dependency>
-		
-		
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -94,7 +92,6 @@
             <version>1.2.17</version>
             <scope>runtime</scope>
         </dependency>
-
     </dependencies>
 
     <repositories>
@@ -126,6 +123,21 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
+            </plugin>
+            <plugin>
+                <groupId>com.github.ferstl</groupId>
+                <artifactId>depgraph-maven-plugin</artifactId>
+                <version>4.0.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>graph</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- Additional configuration if needed -->
+                </configuration>
             </plugin>
         </plugins>
     </build>
